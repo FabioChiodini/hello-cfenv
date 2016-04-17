@@ -17,7 +17,7 @@ COLOR = GREEN
 
 @app.route('/')
 def hello():
-    return render_template("index.html",bgcolor=COLOR,guid=my_uuid,envk=env.name)
+    return render_template("index.html",bgcolor=COLOR,guid=my_uuid,namek=env.name,portk=env.port,appk=env.app)
 
 if __name__ == "__main__":
     app.run(debug=False,host='0.0.0.0', port=env.port)
