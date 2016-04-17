@@ -1,0 +1,8 @@
+---
+applications:
+- name: hello-cfenv
+  memory: 128M
+  buildpack: python_buildpack
+  domain: cfapps.io
+  command: python hello-cfenv.py
+  timeout: 20
